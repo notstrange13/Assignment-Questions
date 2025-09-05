@@ -12,7 +12,7 @@ int main()
     {
         cin >> arr[i];
     }
-    for (i = 0; i < n - 1; i++)
+    for (i = 0; i < n; i++)
     {
         for (j = i + 1; j < n; j++)
         {
@@ -30,7 +30,7 @@ int main()
         cout << arr[i] << " ";
     }
     cout << "\nDescending order: ";
-    for (i = 0; i >= 0; i--)
+    for (i = n-1; i >= 0; i--)
     {
         cout << arr[i] << " ";
     }
