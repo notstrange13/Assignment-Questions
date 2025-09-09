@@ -22,7 +22,7 @@ struct InputRestrictedDeque
         if (full())
             return;
         if (front == -1)
-            front == 0;
+            front = 0;
         rear = (rear + 1) % size;
         data[rear] = val;
     }
@@ -44,7 +44,7 @@ struct InputRestrictedDeque
         if (front == rear)
             front = rear = -1;
         else
-            front = (front + 1) % size;
+            rear = (rear + 1) % size;
     }
 
     void show()
@@ -55,7 +55,7 @@ struct InputRestrictedDeque
             return;
         }
 
-        for (int i = front; i = (i + 1) % size; i++)
+        for (int i = front;; i = (i + 1) % size)
         {
             cout << data[i] << " ";
             if (i == rear)
