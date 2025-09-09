@@ -55,7 +55,7 @@ struct OutputRestrictedDeque
             cout << "Empty\n";
             return;
         }
-        for (int i = 0; i = (i + 1) % size; i++)
+        for (int i = front;; i = (i + 1) % size)
         {
             cout << data[i] << " ";
             if (i == rear)
