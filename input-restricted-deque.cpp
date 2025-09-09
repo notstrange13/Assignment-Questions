@@ -77,3 +77,12 @@ int main()
     dq.show();
     return 0;
 }
+
+/*
+Output
+10  20  30
+
+20
+
+
+*/
