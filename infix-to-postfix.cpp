@@ -58,6 +58,6 @@ int main()
         postfix += st.top();
         st.pop();
     }
-    cout << "Postfix expression: " << postfix;
+    cout << "Postfix expression: " << postfix<<endl;
     return 0;
 }
